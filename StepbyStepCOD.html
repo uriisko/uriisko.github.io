@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Uri Iskovich Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Cause of Death<br />
+						</h1>
+						<p>Presented step by step - from background to final conclusions<br />
+						</p>
+						<ul class="actions">
+							<img src="images/Data.jpeg" width="700" height="300"/>
+						</ul>
+					</div>
+				<nav id ="nav">
+					<ul class="links">
+						<li class="active"><a href="index.html" >Back</a></li>
+						<li class="active"><a href="#Cleaning The Data" >cleaning the data</a></li>
+						<li class="active"><a href="#Conclusions" >Conclusions</a></li>
+					</ul>
+				</nav>
+
+
+
+				<!-- Main -->
+				<div id="main">
+
+						<article class="step by step">
+								<p><h3>Background:</h3>
+									In this Project I wanted to find out – what are the leading causes of death in Israel and worldwide? I believe that understanding the causes can help us gain knowledge and know especially what we should avoid.<br>
+
+								</p>
+							<p id="Cleaning The Data"><h3>Cleaning the Data:</h3>
+								I got the Data from the WHO (world Health Organization) Website. I Imported the Data as an OData feed, then I used Power Query to remove unnecessary columns and append the different queries to one table. Then I used Xlookup function to divide the 131 causes into 22 groups (for example: lung cancer, liver cancer and all other types of cancer are all under “malignant neoplasms”).
+I imported the file to SQL server to analyze the data, then imported my queries to Power BI to create the visualization.
+
+							</p>
+
+							<p>
+							<p id="Conclusions"><h3>Conclusions:</h3>
+								1. The two major causes of death in Israel are malignant neoplasms and cardiovascular diseases.
+								Since the year 2000 the number of deaths from cardiovascular diseases has been declining.
+								The number of deaths from malignant neoplasms is also declining, but in much slower rate (see Charts below).
+								<br>
+							<img src="images/Israel.png" /> <br><br>
+
+							2. The Top two causes of death for men are: Ischaemic heart disease and trachea, bronchus and lung cancers (highly related to smoking). For women its Ischaemic heart disease and Alzheimer.<br>
+							<img src="images/CODGender.png"  /> <br><br>
+							3. It seems that Israel is doing better than the other countries under review, with less deaths per 100K population from malignant neoplasms and cardiovascular diseases.<br>
+							<img src="images/CODworld.png" /> <br><br>
+							4. From ages 25 to 39 the leading cause of death is “self-harm”, meaning suicide.  <br><br>
+							<img src="images/card.png" />  <img src="images/card2.png" /> <br>
+						</p>
+							
+						
+							</article>
+
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Tel-Aviv, Israel<br />
+								</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+972528380380</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">uri.isko@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/uri-iskovich/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/uriisko" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
